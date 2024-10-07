@@ -63,9 +63,9 @@ export declare type BoostTopResponseJson = {
 export declare const BoostTopResponseSchema: GenMessage<BoostTopResponse, BoostTopResponseJson>;
 
 /**
- * @generated from message vave.GetTopRequest
+ * @generated from message vave.TopRequest
  */
-export declare type GetTopRequest = Message<"vave.GetTopRequest"> & {
+export declare type TopRequest = Message<"vave.TopRequest"> & {
   /**
    * @generated from field: string req_data = 1;
    */
@@ -73,9 +73,9 @@ export declare type GetTopRequest = Message<"vave.GetTopRequest"> & {
 };
 
 /**
- * JSON type for the message vave.GetTopRequest.
+ * JSON type for the message vave.TopRequest.
  */
-export declare type GetTopRequestJson = {
+export declare type TopRequestJson = {
   /**
    * @generated from field: string req_data = 1;
    */
@@ -83,15 +83,15 @@ export declare type GetTopRequestJson = {
 };
 
 /**
- * Describes the message vave.GetTopRequest.
- * Use `create(GetTopRequestSchema)` to create a new message.
+ * Describes the message vave.TopRequest.
+ * Use `create(TopRequestSchema)` to create a new message.
  */
-export declare const GetTopRequestSchema: GenMessage<GetTopRequest, GetTopRequestJson>;
+export declare const TopRequestSchema: GenMessage<TopRequest, TopRequestJson>;
 
 /**
- * @generated from message vave.GetTopResponse
+ * @generated from message vave.TopResponse
  */
-export declare type GetTopResponse = Message<"vave.GetTopResponse"> & {
+export declare type TopResponse = Message<"vave.TopResponse"> & {
   /**
    * @generated from field: repeated vave.User list = 1;
    */
@@ -104,9 +104,9 @@ export declare type GetTopResponse = Message<"vave.GetTopResponse"> & {
 };
 
 /**
- * JSON type for the message vave.GetTopResponse.
+ * JSON type for the message vave.TopResponse.
  */
-export declare type GetTopResponseJson = {
+export declare type TopResponseJson = {
   /**
    * @generated from field: repeated vave.User list = 1;
    */
@@ -119,10 +119,10 @@ export declare type GetTopResponseJson = {
 };
 
 /**
- * Describes the message vave.GetTopResponse.
- * Use `create(GetTopResponseSchema)` to create a new message.
+ * Describes the message vave.TopResponse.
+ * Use `create(TopResponseSchema)` to create a new message.
  */
-export declare const GetTopResponseSchema: GenMessage<GetTopResponse, GetTopResponseJson>;
+export declare const TopResponseSchema: GenMessage<TopResponse, TopResponseJson>;
 
 /**
  * @generated from message vave.FollowRequest
@@ -651,12 +651,12 @@ export declare const API: GenService<{
     output: typeof FollowResponseSchema;
   },
   /**
-   * @generated from rpc vave.API.GetTop
+   * @generated from rpc vave.API.Top
    */
-  getTop: {
+  top: {
     methodKind: "unary";
-    input: typeof GetTopRequestSchema;
-    output: typeof GetTopResponseSchema;
+    input: typeof TopRequestSchema;
+    output: typeof TopResponseSchema;
   },
 }>;
 
