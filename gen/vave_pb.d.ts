@@ -389,32 +389,37 @@ export declare const MeRequestSchema: GenMessage<MeRequest, MeRequestJson>;
  */
 export declare type MeResponse = Message<"vave.MeResponse"> & {
   /**
-   * @generated from field: string name = 1;
+   * @generated from field: string id = 1;
+   */
+  id: string;
+
+  /**
+   * @generated from field: string name = 2;
    */
   name: string;
 
   /**
-   * @generated from field: string about = 2;
+   * @generated from field: string about = 3;
    */
   about: string;
 
   /**
-   * @generated from field: optional string username = 3;
+   * @generated from field: optional string username = 4;
    */
   username?: string;
 
   /**
-   * @generated from field: int32 queue_position = 4;
+   * @generated from field: int32 queue_position = 5;
    */
   queuePosition: number;
 
   /**
-   * @generated from field: int32 followers = 5;
+   * @generated from field: int32 followers = 6;
    */
   followers: number;
 
   /**
-   * @generated from field: vave.User invited_by = 6;
+   * @generated from field: vave.User invited_by = 7;
    */
   invitedBy?: User;
 };
@@ -424,32 +429,37 @@ export declare type MeResponse = Message<"vave.MeResponse"> & {
  */
 export declare type MeResponseJson = {
   /**
-   * @generated from field: string name = 1;
+   * @generated from field: string id = 1;
+   */
+  id?: string;
+
+  /**
+   * @generated from field: string name = 2;
    */
   name?: string;
 
   /**
-   * @generated from field: string about = 2;
+   * @generated from field: string about = 3;
    */
   about?: string;
 
   /**
-   * @generated from field: optional string username = 3;
+   * @generated from field: optional string username = 4;
    */
   username?: string;
 
   /**
-   * @generated from field: int32 queue_position = 4;
+   * @generated from field: int32 queue_position = 5;
    */
   queuePosition?: number;
 
   /**
-   * @generated from field: int32 followers = 5;
+   * @generated from field: int32 followers = 6;
    */
   followers?: number;
 
   /**
-   * @generated from field: vave.User invited_by = 6;
+   * @generated from field: vave.User invited_by = 7;
    */
   invitedBy?: UserJson;
 };
