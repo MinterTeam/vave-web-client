@@ -603,14 +603,6 @@ export declare const PingResponseSchema: GenMessage<PingResponse, PingResponseJs
  */
 export declare const API: GenService<{
   /**
-   * @generated from rpc vave.API.Ping
-   */
-  ping: {
-    methodKind: "unary";
-    input: typeof PingRequestSchema;
-    output: typeof PingResponseSchema;
-  },
-  /**
    * @generated from rpc vave.API.Me
    */
   me: {
