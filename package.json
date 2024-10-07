@@ -1,0 +1,14 @@
+{
+  "name": "tg-vave-web-client",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "gen/clicker_pb.js",
+  "types": "gen/clicker_pb.d.ts",
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.0.0"
+  },
+  "devDependencies": {
+    "@bufbuild/protoc-gen-es": "^2.0.0",
+    "grpc-tools": "^1.12.4"
+  }
+}
