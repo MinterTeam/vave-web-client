@@ -266,6 +266,11 @@ export declare type CheckUsernameResponse = Message<"vave.CheckUsernameResponse"
    * @generated from field: bool available = 1;
    */
   available: boolean;
+
+  /**
+   * @generated from field: optional uint32 price = 2;
+   */
+  price?: number;
 };
 
 /**
@@ -276,6 +281,11 @@ export declare type CheckUsernameResponseJson = {
    * @generated from field: bool available = 1;
    */
   available?: boolean;
+
+  /**
+   * @generated from field: optional uint32 price = 2;
+   */
+  price?: number;
 };
 
 /**
