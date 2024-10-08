@@ -227,7 +227,12 @@ export declare const FollowTopResponseSchema: GenMessage<FollowTopResponse, Foll
  */
 export declare type CheckUsernameRequest = Message<"vave.CheckUsernameRequest"> & {
   /**
-   * @generated from field: string username = 1;
+   * @generated from field: string req_data = 1;
+   */
+  reqData: string;
+
+  /**
+   * @generated from field: string username = 2;
    */
   username: string;
 };
@@ -237,7 +242,12 @@ export declare type CheckUsernameRequest = Message<"vave.CheckUsernameRequest"> 
  */
 export declare type CheckUsernameRequestJson = {
   /**
-   * @generated from field: string username = 1;
+   * @generated from field: string req_data = 1;
+   */
+  reqData?: string;
+
+  /**
+   * @generated from field: string username = 2;
    */
   username?: string;
 };
@@ -597,58 +607,6 @@ export declare type UserJson = {
  * Use `create(UserSchema)` to create a new message.
  */
 export declare const UserSchema: GenMessage<User, UserJson>;
-
-/**
- * @generated from message vave.PingRequest
- */
-export declare type PingRequest = Message<"vave.PingRequest"> & {
-  /**
-   * @generated from field: uint64 nonce = 1;
-   */
-  nonce: bigint;
-};
-
-/**
- * JSON type for the message vave.PingRequest.
- */
-export declare type PingRequestJson = {
-  /**
-   * @generated from field: uint64 nonce = 1;
-   */
-  nonce?: string;
-};
-
-/**
- * Describes the message vave.PingRequest.
- * Use `create(PingRequestSchema)` to create a new message.
- */
-export declare const PingRequestSchema: GenMessage<PingRequest, PingRequestJson>;
-
-/**
- * @generated from message vave.PingResponse
- */
-export declare type PingResponse = Message<"vave.PingResponse"> & {
-  /**
-   * @generated from field: uint64 nonce = 1;
-   */
-  nonce: bigint;
-};
-
-/**
- * JSON type for the message vave.PingResponse.
- */
-export declare type PingResponseJson = {
-  /**
-   * @generated from field: uint64 nonce = 1;
-   */
-  nonce?: string;
-};
-
-/**
- * Describes the message vave.PingResponse.
- * Use `create(PingResponseSchema)` to create a new message.
- */
-export declare const PingResponseSchema: GenMessage<PingResponse, PingResponseJson>;
 
 /**
  * @generated from service vave.API
