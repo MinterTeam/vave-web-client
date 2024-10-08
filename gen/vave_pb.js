@@ -8,7 +8,7 @@ import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv1
  * Describes the file vave.proto.
  */
 export const file_vave = /*@__PURE__*/
-  fileDesc("Cgp2YXZlLnByb3RvEgR2YXZlIiMKD0Jvb3N0VG9wUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCSIoChBCb29zdFRvcFJlc3BvbnNlEhQKDHBheW1lbnRfbGluaxgBIAEoCSIeCgpUb3BSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJIkQKC1RvcFJlc3BvbnNlEhgKBGxpc3QYASADKAsyCi52YXZlLlVzZXISGwoHYm9vc3RlZBgCIAMoCzIKLnZhdmUuVXNlciIyCg1Gb2xsb3dSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJEg8KB3VzZXJfaWQYAiADKAkiEAoORm9sbG93UmVzcG9uc2UiJAoQRm9sbG93VG9wUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCSITChFGb2xsb3dUb3BSZXNwb25zZSI4ChJTZXRVc2VybmFtZVJlcXVlc3QSEAoIcmVxX2RhdGEYASABKAkSEAoIdXNlcm5hbWUYAiABKAkiQQoTU2V0VXNlcm5hbWVSZXNwb25zZRIZCgxwYXltZW50X2xpbmsYASABKAlIAIgBAUIPCg1fcGF5bWVudF9saW5rIlAKD1JlZ2lzdGVyUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCRIMCgRuYW1lGAIgASgJEg0KBWFib3V0GAMgASgJEg4KBnJlZl9pZBgEIAEoCSISChBSZWdpc3RlclJlc3BvbnNlIh0KCU1lUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCSKkAQoKTWVSZXNwb25zZRIKCgJpZBgBIAEoCRIMCgRuYW1lGAIgASgJEg0KBWFib3V0GAMgASgJEhUKCHVzZXJuYW1lGAQgASgJSACIAQESFgoOcXVldWVfcG9zaXRpb24YBSABKAUSEQoJZm9sbG93ZXJzGAYgASgFEh4KCmludml0ZWRfYnkYByABKAsyCi52YXZlLlVzZXJCCwoJX3VzZXJuYW1lIoQBCgRVc2VyEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDQoFYWJvdXQYAyABKAkSEAoIdXNlcm5hbWUYBCABKAkSEQoJZm9sbG93ZXJzGAUgASgFEhsKDmZvbGxvd2VkX2J5X21lGAYgASgISACIAQFCEQoPX2ZvbGxvd2VkX2J5X21lIhwKC1BpbmdSZXF1ZXN0Eg0KBW5vbmNlGAEgASgEIh0KDFBpbmdSZXNwb25zZRINCgVub25jZRgBIAEoBDLVAgoDQVBJEikKAk1lEg8udmF2ZS5NZVJlcXVlc3QaEC52YXZlLk1lUmVzcG9uc2UiABI7CghSZWdpc3RlchIVLnZhdmUuUmVnaXN0ZXJSZXF1ZXN0GhYudmF2ZS5SZWdpc3RlclJlc3BvbnNlIgASRAoLU2V0VXNlcm5hbWUSGC52YXZlLlNldFVzZXJuYW1lUmVxdWVzdBoZLnZhdmUuU2V0VXNlcm5hbWVSZXNwb25zZSIAEjsKCEJvb3N0VG9wEhUudmF2ZS5Cb29zdFRvcFJlcXVlc3QaFi52YXZlLkJvb3N0VG9wUmVzcG9uc2UiABI1CgZGb2xsb3cSEy52YXZlLkZvbGxvd1JlcXVlc3QaFC52YXZlLkZvbGxvd1Jlc3BvbnNlIgASLAoDVG9wEhAudmF2ZS5Ub3BSZXF1ZXN0GhEudmF2ZS5Ub3BSZXNwb25zZSIAYgZwcm90bzM");
+  fileDesc("Cgp2YXZlLnByb3RvEgR2YXZlIiMKD0Jvb3N0VG9wUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCSIoChBCb29zdFRvcFJlc3BvbnNlEhQKDHBheW1lbnRfbGluaxgBIAEoCSIeCgpUb3BSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJIkQKC1RvcFJlc3BvbnNlEhgKBGxpc3QYASADKAsyCi52YXZlLlVzZXISGwoHYm9vc3RlZBgCIAMoCzIKLnZhdmUuVXNlciIyCg1Gb2xsb3dSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJEg8KB3VzZXJfaWQYAiADKAkiEAoORm9sbG93UmVzcG9uc2UiJAoQRm9sbG93VG9wUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCSITChFGb2xsb3dUb3BSZXNwb25zZSIoChRDaGVja1VzZXJuYW1lUmVxdWVzdBIQCgh1c2VybmFtZRgBIAEoCSIqChVDaGVja1VzZXJuYW1lUmVzcG9uc2USEQoJYXZhaWxhYmxlGAEgASgIIjgKElNldFVzZXJuYW1lUmVxdWVzdBIQCghyZXFfZGF0YRgBIAEoCRIQCgh1c2VybmFtZRgCIAEoCSJBChNTZXRVc2VybmFtZVJlc3BvbnNlEhkKDHBheW1lbnRfbGluaxgBIAEoCUgAiAEBQg8KDV9wYXltZW50X2xpbmsiUAoPUmVnaXN0ZXJSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJEgwKBG5hbWUYAiABKAkSDQoFYWJvdXQYAyABKAkSDgoGcmVmX2lkGAQgASgJIhIKEFJlZ2lzdGVyUmVzcG9uc2UiHQoJTWVSZXF1ZXN0EhAKCHJlcV9kYXRhGAEgASgJIqQBCgpNZVJlc3BvbnNlEgoKAmlkGAEgASgJEgwKBG5hbWUYAiABKAkSDQoFYWJvdXQYAyABKAkSFQoIdXNlcm5hbWUYBCABKAlIAIgBARIWCg5xdWV1ZV9wb3NpdGlvbhgFIAEoBRIRCglmb2xsb3dlcnMYBiABKAUSHgoKaW52aXRlZF9ieRgHIAEoCzIKLnZhdmUuVXNlckILCglfdXNlcm5hbWUihAEKBFVzZXISCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRINCgVhYm91dBgDIAEoCRIQCgh1c2VybmFtZRgEIAEoCRIRCglmb2xsb3dlcnMYBSABKAUSGwoOZm9sbG93ZWRfYnlfbWUYBiABKAhIAIgBAUIRCg9fZm9sbG93ZWRfYnlfbWUiHAoLUGluZ1JlcXVlc3QSDQoFbm9uY2UYASABKAQiHQoMUGluZ1Jlc3BvbnNlEg0KBW5vbmNlGAEgASgEMqEDCgNBUEkSKQoCTWUSDy52YXZlLk1lUmVxdWVzdBoQLnZhdmUuTWVSZXNwb25zZSIAEjsKCFJlZ2lzdGVyEhUudmF2ZS5SZWdpc3RlclJlcXVlc3QaFi52YXZlLlJlZ2lzdGVyUmVzcG9uc2UiABJKCg1DaGVja1VzZXJuYW1lEhoudmF2ZS5DaGVja1VzZXJuYW1lUmVxdWVzdBobLnZhdmUuQ2hlY2tVc2VybmFtZVJlc3BvbnNlIgASRAoLU2V0VXNlcm5hbWUSGC52YXZlLlNldFVzZXJuYW1lUmVxdWVzdBoZLnZhdmUuU2V0VXNlcm5hbWVSZXNwb25zZSIAEjsKCEJvb3N0VG9wEhUudmF2ZS5Cb29zdFRvcFJlcXVlc3QaFi52YXZlLkJvb3N0VG9wUmVzcG9uc2UiABI1CgZGb2xsb3cSEy52YXZlLkZvbGxvd1JlcXVlc3QaFC52YXZlLkZvbGxvd1Jlc3BvbnNlIgASLAoDVG9wEhAudmF2ZS5Ub3BSZXF1ZXN0GhEudmF2ZS5Ub3BSZXNwb25zZSIAYgZwcm90bzM");
 
 /**
  * Describes the message vave.BoostTopRequest.
@@ -67,67 +67,81 @@ export const FollowTopResponseSchema = /*@__PURE__*/
   messageDesc(file_vave, 7);
 
 /**
+ * Describes the message vave.CheckUsernameRequest.
+ * Use `create(CheckUsernameRequestSchema)` to create a new message.
+ */
+export const CheckUsernameRequestSchema = /*@__PURE__*/
+  messageDesc(file_vave, 8);
+
+/**
+ * Describes the message vave.CheckUsernameResponse.
+ * Use `create(CheckUsernameResponseSchema)` to create a new message.
+ */
+export const CheckUsernameResponseSchema = /*@__PURE__*/
+  messageDesc(file_vave, 9);
+
+/**
  * Describes the message vave.SetUsernameRequest.
  * Use `create(SetUsernameRequestSchema)` to create a new message.
  */
 export const SetUsernameRequestSchema = /*@__PURE__*/
-  messageDesc(file_vave, 8);
+  messageDesc(file_vave, 10);
 
 /**
  * Describes the message vave.SetUsernameResponse.
  * Use `create(SetUsernameResponseSchema)` to create a new message.
  */
 export const SetUsernameResponseSchema = /*@__PURE__*/
-  messageDesc(file_vave, 9);
+  messageDesc(file_vave, 11);
 
 /**
  * Describes the message vave.RegisterRequest.
  * Use `create(RegisterRequestSchema)` to create a new message.
  */
 export const RegisterRequestSchema = /*@__PURE__*/
-  messageDesc(file_vave, 10);
+  messageDesc(file_vave, 12);
 
 /**
  * Describes the message vave.RegisterResponse.
  * Use `create(RegisterResponseSchema)` to create a new message.
  */
 export const RegisterResponseSchema = /*@__PURE__*/
-  messageDesc(file_vave, 11);
+  messageDesc(file_vave, 13);
 
 /**
  * Describes the message vave.MeRequest.
  * Use `create(MeRequestSchema)` to create a new message.
  */
 export const MeRequestSchema = /*@__PURE__*/
-  messageDesc(file_vave, 12);
+  messageDesc(file_vave, 14);
 
 /**
  * Describes the message vave.MeResponse.
  * Use `create(MeResponseSchema)` to create a new message.
  */
 export const MeResponseSchema = /*@__PURE__*/
-  messageDesc(file_vave, 13);
+  messageDesc(file_vave, 15);
 
 /**
  * Describes the message vave.User.
  * Use `create(UserSchema)` to create a new message.
  */
 export const UserSchema = /*@__PURE__*/
-  messageDesc(file_vave, 14);
+  messageDesc(file_vave, 16);
 
 /**
  * Describes the message vave.PingRequest.
  * Use `create(PingRequestSchema)` to create a new message.
  */
 export const PingRequestSchema = /*@__PURE__*/
-  messageDesc(file_vave, 15);
+  messageDesc(file_vave, 17);
 
 /**
  * Describes the message vave.PingResponse.
  * Use `create(PingResponseSchema)` to create a new message.
  */
 export const PingResponseSchema = /*@__PURE__*/
-  messageDesc(file_vave, 16);
+  messageDesc(file_vave, 18);
 
 /**
  * @generated from service vave.API

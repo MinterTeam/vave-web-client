@@ -223,6 +223,58 @@ export declare type FollowTopResponseJson = {
 export declare const FollowTopResponseSchema: GenMessage<FollowTopResponse, FollowTopResponseJson>;
 
 /**
+ * @generated from message vave.CheckUsernameRequest
+ */
+export declare type CheckUsernameRequest = Message<"vave.CheckUsernameRequest"> & {
+  /**
+   * @generated from field: string username = 1;
+   */
+  username: string;
+};
+
+/**
+ * JSON type for the message vave.CheckUsernameRequest.
+ */
+export declare type CheckUsernameRequestJson = {
+  /**
+   * @generated from field: string username = 1;
+   */
+  username?: string;
+};
+
+/**
+ * Describes the message vave.CheckUsernameRequest.
+ * Use `create(CheckUsernameRequestSchema)` to create a new message.
+ */
+export declare const CheckUsernameRequestSchema: GenMessage<CheckUsernameRequest, CheckUsernameRequestJson>;
+
+/**
+ * @generated from message vave.CheckUsernameResponse
+ */
+export declare type CheckUsernameResponse = Message<"vave.CheckUsernameResponse"> & {
+  /**
+   * @generated from field: bool available = 1;
+   */
+  available: boolean;
+};
+
+/**
+ * JSON type for the message vave.CheckUsernameResponse.
+ */
+export declare type CheckUsernameResponseJson = {
+  /**
+   * @generated from field: bool available = 1;
+   */
+  available?: boolean;
+};
+
+/**
+ * Describes the message vave.CheckUsernameResponse.
+ * Use `create(CheckUsernameResponseSchema)` to create a new message.
+ */
+export declare const CheckUsernameResponseSchema: GenMessage<CheckUsernameResponse, CheckUsernameResponseJson>;
+
+/**
  * @generated from message vave.SetUsernameRequest
  */
 export declare type SetUsernameRequest = Message<"vave.SetUsernameRequest"> & {
@@ -617,6 +669,14 @@ export declare const API: GenService<{
     methodKind: "unary";
     input: typeof RegisterRequestSchema;
     output: typeof RegisterResponseSchema;
+  },
+  /**
+   * @generated from rpc vave.API.CheckUsername
+   */
+  checkUsername: {
+    methodKind: "unary";
+    input: typeof CheckUsernameRequestSchema;
+    output: typeof CheckUsernameResponseSchema;
   },
   /**
    * @generated from rpc vave.API.SetUsername
