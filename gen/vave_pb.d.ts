@@ -263,9 +263,9 @@ export declare const SetUsernameRequestSchema: GenMessage<SetUsernameRequest, Se
  */
 export declare type SetUsernameResponse = Message<"vave.SetUsernameResponse"> & {
   /**
-   * @generated from field: string payment_link = 1;
+   * @generated from field: optional string payment_link = 1;
    */
-  paymentLink: string;
+  paymentLink?: string;
 };
 
 /**
@@ -273,7 +273,7 @@ export declare type SetUsernameResponse = Message<"vave.SetUsernameResponse"> & 
  */
 export declare type SetUsernameResponseJson = {
   /**
-   * @generated from field: string payment_link = 1;
+   * @generated from field: optional string payment_link = 1;
    */
   paymentLink?: string;
 };
