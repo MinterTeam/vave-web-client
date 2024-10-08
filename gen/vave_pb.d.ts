@@ -562,9 +562,9 @@ export declare type User = Message<"vave.User"> & {
   about: string;
 
   /**
-   * @generated from field: string username = 4;
+   * @generated from field: optional string username = 4;
    */
-  username: string;
+  username?: string;
 
   /**
    * @generated from field: int32 followers = 5;
@@ -597,7 +597,7 @@ export declare type UserJson = {
   about?: string;
 
   /**
-   * @generated from field: string username = 4;
+   * @generated from field: optional string username = 4;
    */
   username?: string;
 
