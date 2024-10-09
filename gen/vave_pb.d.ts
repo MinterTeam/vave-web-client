@@ -431,6 +431,70 @@ export declare type RegisterResponseJson = {
 export declare const RegisterResponseSchema: GenMessage<RegisterResponse, RegisterResponseJson>;
 
 /**
+ * @generated from message vave.UpdateUserRequest
+ */
+export declare type UpdateUserRequest = Message<"vave.UpdateUserRequest"> & {
+  /**
+   * @generated from field: string req_data = 1;
+   */
+  reqData: string;
+
+  /**
+   * @generated from field: string name = 2;
+   */
+  name: string;
+
+  /**
+   * @generated from field: string about = 3;
+   */
+  about: string;
+};
+
+/**
+ * @generated from message vave.UpdateUserRequest
+ */
+export declare type UpdateUserRequestJson = {
+  /**
+   * @generated from field: string req_data = 1;
+   */
+  reqData?: string;
+
+  /**
+   * @generated from field: string name = 2;
+   */
+  name?: string;
+
+  /**
+   * @generated from field: string about = 3;
+   */
+  about?: string;
+};
+
+/**
+ * Describes the message vave.UpdateUserRequest.
+ * Use `create(UpdateUserRequestSchema)` to create a new message.
+ */
+export declare const UpdateUserRequestSchema: GenMessage<UpdateUserRequest, UpdateUserRequestJson>;
+
+/**
+ * @generated from message vave.UpdateUserResponse
+ */
+export declare type UpdateUserResponse = Message<"vave.UpdateUserResponse"> & {
+};
+
+/**
+ * @generated from message vave.UpdateUserResponse
+ */
+export declare type UpdateUserResponseJson = {
+};
+
+/**
+ * Describes the message vave.UpdateUserResponse.
+ * Use `create(UpdateUserResponseSchema)` to create a new message.
+ */
+export declare const UpdateUserResponseSchema: GenMessage<UpdateUserResponse, UpdateUserResponseJson>;
+
+/**
  * @generated from message vave.MeRequest
  */
 export declare type MeRequest = Message<"vave.MeRequest"> & {
@@ -637,6 +701,14 @@ export declare const API: GenService<{
     methodKind: "unary";
     input: typeof RegisterRequestSchema;
     output: typeof RegisterResponseSchema;
+  },
+  /**
+   * @generated from rpc vave.API.UpdateUser
+   */
+  updateUser: {
+    methodKind: "unary";
+    input: typeof UpdateUserRequestSchema;
+    output: typeof UpdateUserResponseSchema;
   },
   /**
    * @generated from rpc vave.API.CheckUsername
