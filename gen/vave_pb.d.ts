@@ -93,14 +93,14 @@ export declare const TopRequestSchema: GenMessage<TopRequest, TopRequestJson>;
  */
 export declare type TopResponse = Message<"vave.TopResponse"> & {
   /**
-   * @generated from field: repeated vave.User list = 1;
+   * @generated from field: repeated vave.UserResponse list = 1;
    */
-  list: User[];
+  list: UserResponse[];
 
   /**
-   * @generated from field: repeated vave.User boosted = 2;
+   * @generated from field: repeated vave.UserResponse boosted = 2;
    */
-  boosted: User[];
+  boosted: UserResponse[];
 };
 
 /**
@@ -108,14 +108,14 @@ export declare type TopResponse = Message<"vave.TopResponse"> & {
  */
 export declare type TopResponseJson = {
   /**
-   * @generated from field: repeated vave.User list = 1;
+   * @generated from field: repeated vave.UserResponse list = 1;
    */
-  list?: UserJson[];
+  list?: UserResponseJson[];
 
   /**
-   * @generated from field: repeated vave.User boosted = 2;
+   * @generated from field: repeated vave.UserResponse boosted = 2;
    */
-  boosted?: UserJson[];
+  boosted?: UserResponseJson[];
 };
 
 /**
@@ -555,9 +555,9 @@ export declare type MeResponse = Message<"vave.MeResponse"> & {
   followers: number;
 
   /**
-   * @generated from field: vave.User invited_by = 7;
+   * @generated from field: vave.UserResponse invited_by = 7;
    */
-  invitedBy?: User;
+  invitedBy?: UserResponse;
 };
 
 /**
@@ -595,9 +595,9 @@ export declare type MeResponseJson = {
   followers?: number;
 
   /**
-   * @generated from field: vave.User invited_by = 7;
+   * @generated from field: vave.UserResponse invited_by = 7;
    */
-  invitedBy?: UserJson;
+  invitedBy?: UserResponseJson;
 };
 
 /**
@@ -607,9 +607,62 @@ export declare type MeResponseJson = {
 export declare const MeResponseSchema: GenMessage<MeResponse, MeResponseJson>;
 
 /**
- * @generated from message vave.User
+ * @generated from message vave.UserRequest
  */
-export declare type User = Message<"vave.User"> & {
+export declare type UserRequest = Message<"vave.UserRequest"> & {
+  /**
+   * @generated from field: string req_data = 1;
+   */
+  reqData: string;
+
+  /**
+   * @generated from oneof vave.UserRequest.field
+   */
+  field: {
+    /**
+     * @generated from field: string username = 2;
+     */
+    value: string;
+    case: "username";
+  } | {
+    /**
+     * @generated from field: string id = 3;
+     */
+    value: string;
+    case: "id";
+  } | { case: undefined; value?: undefined };
+};
+
+/**
+ * @generated from message vave.UserRequest
+ */
+export declare type UserRequestJson = {
+  /**
+   * @generated from field: string req_data = 1;
+   */
+  reqData?: string;
+
+  /**
+   * @generated from field: string username = 2;
+   */
+  username?: string;
+
+  /**
+   * @generated from field: string id = 3;
+   */
+  id?: string;
+};
+
+/**
+ * Describes the message vave.UserRequest.
+ * Use `create(UserRequestSchema)` to create a new message.
+ */
+export declare const UserRequestSchema: GenMessage<UserRequest, UserRequestJson>;
+
+/**
+ * @generated from message vave.UserResponse
+ */
+export declare type UserResponse = Message<"vave.UserResponse"> & {
   /**
    * @generated from field: string id = 1;
    */
@@ -642,9 +695,9 @@ export declare type User = Message<"vave.User"> & {
 };
 
 /**
- * @generated from message vave.User
+ * @generated from message vave.UserResponse
  */
-export declare type UserJson = {
+export declare type UserResponseJson = {
   /**
    * @generated from field: string id = 1;
    */
@@ -677,10 +730,10 @@ export declare type UserJson = {
 };
 
 /**
- * Describes the message vave.User.
- * Use `create(UserSchema)` to create a new message.
+ * Describes the message vave.UserResponse.
+ * Use `create(UserResponseSchema)` to create a new message.
  */
-export declare const UserSchema: GenMessage<User, UserJson>;
+export declare const UserResponseSchema: GenMessage<UserResponse, UserResponseJson>;
 
 /**
  * @generated from service vave.API
@@ -693,6 +746,14 @@ export declare const API: GenService<{
     methodKind: "unary";
     input: typeof MeRequestSchema;
     output: typeof MeResponseSchema;
+  },
+  /**
+   * @generated from rpc vave.API.User
+   */
+  user: {
+    methodKind: "unary";
+    input: typeof UserRequestSchema;
+    output: typeof UserResponseSchema;
   },
   /**
    * @generated from rpc vave.API.Register
