@@ -4,14 +4,7 @@
   "type": "module",
   "main": "gen/vave_pb.js",
   "types": "gen/vave_pb.d.ts",
-  "scripts": {
-    "build": "./protocgen.sh"
-  },
   "dependencies": {
     "@bufbuild/protobuf": "^2.1.0"
-  },
-  "devDependencies": {
-    "@bufbuild/protoc-gen-es": "^2.1.0",
-    "grpc-tools": "^1.12.4"
   }
 }
